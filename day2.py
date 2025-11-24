@@ -5,8 +5,8 @@ for i in range(1, 5):
         print(" * ", end="")
     print("")    
 
-print("Pattern 2")
 
+print("Pattern 2")
 for i in range (1, 5):
     for j in range (i, 5):
         print(" * ", end='')
@@ -15,14 +15,19 @@ for i in range (1, 5):
 
 
 print("Pattern 3 right side")
+for i in range (1, 6):
+    for j in range (1, 6-i):
+        print("   ",end="")
+    for k in range (1,i):
+        print(" * ",end="")
+    print("")    
 
-for i in range (1, 5):
-    for j in range (1, 5-i):
-        print("  ")
-    for k in range (0,i):
-        print(" * ", end='')
-    #print("")    
 
+print("pattern 4 left side")
+for i in range (1 ,6):
+    for j in range (1, i):
+        print(" * ", end="")
+    print("  ")    
 
 def isOddNumber (n):
     if(n % 2 == 0):
@@ -31,10 +36,11 @@ def isOddNumber (n):
         print("this is odd", n)    
 
 
-# idOddNumber(5)
-print(isOddNumber(5))
+isOddNumber(5)
+# print(isOddNumber(5))
 
 add = lambda a,b:a+b
-print(add(5,20))
+test = add(5,20)
+print(test)
 
 

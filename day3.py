@@ -42,3 +42,16 @@ print("min", min)
 print("max", max)
 k = len(arr)    
 print("array length", k)
+
+import math
+num = int(input('Please Enter a number to check fibonacci =>  '))
+rev = 0
+while(num > 0):
+    digit = num % 10
+    rev = rev * 10 + digit
+    num = math.floor(num/10)
+
+print("num is ", num , " rev ", rev)    
+
+
+
